@@ -1,0 +1,79 @@
+.carousel-container {
+    width: 80vh;
+    margin-top: 150px; /* Ajusta el margen superior del contenedor del carrusel */
+}
+
+.carousel-inner img {
+    width: 200vh;
+    height: 50vh;
+}
+
+.texto-modificable {
+    position: absolute;
+    top: 50px; /* Cambia esta propiedad para mover el texto verticalmente */
+    left: 50%; /* Cambia esta propiedad para mover el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra vertical y horizontalmente */
+    font-size: 30px; /* Cambia el tamaño del texto aquí */
+    line-height: 1.5; /* Cambia la altura de la línea aquí */
+    color: rgb(0, 0, 0); /* Color del texto */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.apartado-escritura {
+    margin-top: 2%; /* Ajusta el margen superior del apartado de escritura */
+    padding: 10px;
+    border-radius: 15px;
+    height: 100px;
+    width: 100vh;
+    left: 60px;
+    right: 80vh;
+}
+body {
+    background-color: #ddead1;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 90%;
+        margin-top: 50px; /* Ajusta el margen superior para dispositivos móviles */
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .texto-modificable {
+        font-size: 20px; /* Reduce el tamaño del texto en pantallas pequeñas */
+        top: 20px; /* Ajusta la posición del texto */
+    }
+
+    .apartado-escritura {
+        width: 90%;
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        left: 5%;
+        right: 5%;
+    }
+}
+
+/* Media query para pantallas muy pequeñas (por ejemplo, teléfonos en modo vertical) */
+@media (max-width: 480px) {
+    .carousel-container {
+        width: 95%;
+        margin-top: 30px; /* Ajusta el margen superior para pantallas muy pequeñas */
+    }
+
+    .texto-modificable {
+        font-size: 18px; /* Reduce aún más el tamaño del texto */
+        top: 10px; /* Ajusta la posición del texto */
+    }
+
+    .apartado-escritura {
+        width: 95%;
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        left: 2.5%;
+        right: 2.5%;
+    }
+}
